@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="26.94983">
+<testcase classname="Free CRM Login feature" name="Free CRM Login Test Application scenario" time="14.965271">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at com.crm.qa.StepDefinition.LoginStepDefinition.user_is_on_Home_Page(LoginStepDefinition.java:50)&#13;&#10;&#9;at ✽.Then User is on Home Page(C:/Users/Jitendra/workspace/FreeCRMBDDFramework/src/main/java/com/crm/qa/Feature/Login.feature:7)&#13;&#10;"><![CDATA[Given User already present on the login page................................passed
+When Title of Login is Free CRM.............................................passed
+Then User Enters username and Password......................................passed
+Then User click on Login button.............................................passed
+Then User is on Home Page...................................................failed
+Then close the browser......................................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<[CRMPRO]> but was:<[]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at com.crm.qa.StepDefinition.LoginStepDefinition.user_is_on_Home_Page(LoginStepDefinition.java:50)
+	at ✽.Then User is on Home Page(C:/Users/Jitendra/workspace/FreeCRMBDDFramework/src/main/java/com/crm/qa/Feature/Login.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="Free CRM Login feature" name="User able to create a new Contact" time="11.984559">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at com.crm.qa.StepDefinition.LoginStepDefinition.user_is_on_Home_Page(LoginStepDefinition.java:50)&#13;&#10;&#9;at com.crm.qa.StepDefinition.CreateNewContact.user_already_on_the_Home_Page(CreateNewContact.java:22)&#13;&#10;&#9;at ✽.Given User already on the Home Page(C:/Users/Jitendra/workspace/FreeCRMBDDFramework/src/main/java/com/crm/qa/Feature/Login.feature:11)&#13;&#10;"><![CDATA[Given User already on the Home Page.........................................failed
+When user over the mouse on Contact.........................................skipped
+Then Clcik on New Contact...................................................skipped
+Then Enters the Contact Details.............................................skipped
+Then Click on Save button...................................................skipped
+Then Close the browser......................................................skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<[CRMPRO]> but was:<[]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at com.crm.qa.StepDefinition.LoginStepDefinition.user_is_on_Home_Page(LoginStepDefinition.java:50)
+	at com.crm.qa.StepDefinition.CreateNewContact.user_already_on_the_Home_Page(CreateNewContact.java:22)
+	at ✽.Given User already on the Home Page(C:/Users/Jitendra/workspace/FreeCRMBDDFramework/src/main/java/com/crm/qa/Feature/Login.feature:11)
+]]></failure>
+</testcase>
+</testsuite>
